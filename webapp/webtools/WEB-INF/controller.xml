@@ -552,7 +552,7 @@ under the License.
     </request-map>
     <request-map uri="DuplicatePortalPage">
         <security https="true" auth="true"/>
-        <event  type="simple" invoke="duplicatePortalPage" path="component://common/script/org/ofbiz/common/PortalPageMethods.xml"/>
+        <event  type="simple" invoke="duplicatePortalPage" path="component://common/script/org/noerp/common/PortalPageMethods.xml"/>
         <response name="success" type="view" value="EditPortalPage"/>
     </request-map>
     <request-map uri="NewPortalPage">
