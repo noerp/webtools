@@ -539,7 +539,7 @@ if (!selectedService) {
             }
 
             if (canIncludeService && constraintName.equals("definitionLocation")) {
-                fullPath = "file:/" + System.getProperty("ofbiz.home") + "/" + constraintVal;
+                fullPath = "file:/" + System.getProperty("noerp.home") + "/" + constraintVal;
                 canIncludeService = curServiceModel.definitionLocation.equals(fullPath);
             }
 
@@ -562,7 +562,7 @@ if (!selectedService) {
             curServiceMap.defaultEntityName = defaultEntityName;
             curServiceMap.invoke = invoke;
             curServiceMap.location = location;
-            curServiceMap.definitionLocation = curServiceModel.definitionLocation.replaceFirst("file:/" + System.getProperty("ofbiz.home") + "/", "");
+            curServiceMap.definitionLocation = curServiceModel.definitionLocation.replaceFirst("file:/" + System.getProperty("noerp.home") + "/", "");
             curServiceMap.requireNewTransaction = requireNewTransaction;
 
             servicesList.add(curServiceMap);
