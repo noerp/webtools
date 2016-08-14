@@ -58,7 +58,12 @@ under the License.
         <response name="error" type="none"/>
         <response name="success" type="none"/>
     </request-map>
-
+    <request-map uri="jsonrpc" track-serverhit="false" track-visit="false">
+        <event type="jsonrpc"/>
+        <response name="error" type="none"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
     <request-map uri="ping">
         <event type="service" invoke="ping"/>
         <response name="error" type="view" value="ping"/>
